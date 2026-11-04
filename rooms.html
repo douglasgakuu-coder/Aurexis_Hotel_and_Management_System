@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rooms &amp; Suites — Aurexis Hotel</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container nav-wrap">
+        <a href="index.html" class="logo">
+          <img src="img/Logo%20img.jpg" alt="Aurexis logo" class="logo-img" />
+          <h1>AUREXIS</h1>
+        </a>
+        <nav id="mainNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="bookings.html">Bookings</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <a href="signup.html" class="btn">Sign Up</a>
+          <a href="login.html" class="btn btn-outline-light">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- PAGE BANNER -->
+    <div class="page-banner">
+      <div class="hero-media"></div>
+      <div class="container page-banner-inner">
+        <h2>Rooms &amp; Suites</h2>
+        <p class="sub">Home &nbsp;/&nbsp; Rooms</p>
+      </div>
+    </div>
+
+    <!-- ROOM GRID -->
+    <section>
+      <div class="container">
+        <div class="sec-head">
+          <h2>Find Your Perfect Stay</h2>
+          <div class="line"></div>
+          <p>
+            Each room is designed for rest, comfort and elegance — with all the
+            amenities of a five-star hotel.
+          </p>
+        </div>
+
+        <div class="filters">
+          <span class="filter-btn active">All Rooms</span>
+          <span class="filter-btn">Deluxe Rooms</span>
+          <span class="filter-btn">Standard Rooms</span>
+          <span class="filter-btn">Executive Rooms</span>
+          <span class="filter-btn">Family Rooms</span>
+          <span class="filter-btn">All Suites</span>
+          <span class="filter-btn">Presidential Rooms</span>
+        </div>
+
+        <div class="cards rooms-grid">
+          <div class="card room-card" data-cat="deluxe">
+            <div class="card-body">
+              <h3><span class="room-badge badge-deluxe">Elite</span> Deluxe Room</h3>
+              <p>Elegant comfort with city views, king bed and marble bath.</p>
+              <ul class="room-meta">
+                <li><i class="fa-solid fa-ruler-combined"></i> 40 m²</li>
+                <li><i class="fa-solid fa-user"></i> 2 Guests</li>
+                <li><i class="fa-solid fa-bed"></i> King Bed</li>
+              </ul>
+              <ul class="room-features">
+                <li><i class="fa-solid fa-mug-saucer"></i> Mini Bar</li>
+                <li><i class="fa-solid fa-bath"></i> Marble Bath</li>
+                <li><i class="fa-solid fa-mountain-city"></i> City View</li>
+              </ul>
+              <div class="room-foot">
+                <div class="price">KES 25,000 <span>/ night</span></div>
+                <div class="room-actions">
+                  <a href="bookings.html" class="btn">Book Now</a>
+                  <a href="#room-detail-deluxe" class="btn btn-outline"
+                    >Explore</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card room-card" data-cat="standard">
+            <div class="card-body">
+              <h3><span class="room-badge badge-standard">Elite</span> Standard Room</h3>
+              <p>Cozy comfort with a queen bed, work desk and garden views.</p>
+              <ul class="room-meta">
+                <li><i class="fa-solid fa-ruler-combined"></i> 32 m²</li>
+                <li><i class="fa-solid fa-user"></i> 2 Guests</li>
+                <li><i class="fa-solid fa-bed"></i> Queen Bed</li>
+              </ul>
+              <ul class="room-features">
+                <li><i class="fa-solid fa-briefcase"></i> Work Desk</li>
+                <li><i class="fa-solid fa-tree"></i> Garden View</li>
+                <li><i class="fa-solid fa-tv"></i> Smart TV</li>
+              </ul>
+              <div class="room-foot">
+                <div class="price">KES 18,000 <span>/ night</span></div>
+                <div class="room-actions">
+                  <a href="bookings.html" class="btn">Book Now</a>
+                  <a href="#room-detail-standard" class="btn btn-outline"
+                    >Explore</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card room-card" data-cat="executive">
+            <div class="card-body">
+              <h3><span class="room-badge badge-executive">Elite</span> Executive Room</h3>
+              <p>
+                Business-ready room with private lounge, work area and panoramic
+                views.
+              </p>
+              <ul class="room-meta">
+                <li><i class="fa-solid fa-ruler-combined"></i> 65 m²</li>
+                <li><i class="fa-solid fa-user"></i> 3 Guests</li>
+                <li><i class="fa-solid fa-bed"></i> King Bed</li>
+              </ul>
+              <ul class="room-features">
+                <li><i class="fa-solid fa-couch"></i> Private Lounge</li>
+                <li><i class="fa-solid fa-laptop"></i> Work Area</li>
+                <li>
+                  <i class="fa-solid fa-champagne-glasses"></i> Lounge Bar
+                </li>
+              </ul>
+              <div class="room-foot">
+                <div class="price">KES 42,000 <span>/ night</span></div>
+                <div class="room-actions">
+                  <a href="bookings.html" class="btn">Book Now</a>
+                  <a href="#room-detail-executive" class="btn btn-outline"
+                    >Explore</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card room-card" data-cat="family">
+            <div class="card-body">
+              <h3><span class="room-badge badge-family">Elite</span> Family Room</h3>
+              <p>Two connected bedrooms, living area and kids' amenities.</p>
+              <ul class="room-meta">
+                <li><i class="fa-solid fa-ruler-combined"></i> 78 m²</li>
+                <li><i class="fa-solid fa-user"></i> 5 Guests</li>
+                <li><i class="fa-solid fa-bed"></i> 2 Bedrooms</li>
+              </ul>
+              <ul class="room-features">
+                <li><i class="fa-solid fa-door-closed"></i> Connected Rooms</li>
+                <li><i class="fa-solid fa-children"></i> Kids' Amenities</li>
+                <li><i class="fa-solid fa-couch"></i> Living Area</li>
+              </ul>
+              <div class="room-foot">
+                <div class="price">KES 56,000 <span>/ night</span></div>
+                <div class="room-actions">
+                  <a href="bookings.html" class="btn">Book Now</a>
+                  <a href="#room-detail-family" class="btn btn-outline"
+                    >Explore</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card room-card" data-cat="suite">
+            <div class="card-body">
+              <h3><span class="room-badge badge-suite">Elite</span> Royal Suite</h3>
+              <p>
+                Sweeping skyline views, private bar and dedicated concierge.
+              </p>
+              <ul class="room-meta">
+                <li><i class="fa-solid fa-ruler-combined"></i> 96 m²</li>
+                <li><i class="fa-solid fa-user"></i> 4 Guests</li>
+                <li><i class="fa-solid fa-bed"></i> King Bed</li>
+              </ul>
+              <ul class="room-features">
+                <li><i class="fa-solid fa-building"></i> Skyline View</li>
+                <li><i class="fa-solid fa-martini-glass"></i> Private Bar</li>
+                <li><i class="fa-solid fa-bell-concierge"></i> Concierge</li>
+              </ul>
+              <div class="room-foot">
+                <div class="price">KES 75,000 <span>/ night</span></div>
+                <div class="room-actions">
+                  <a href="bookings.html" class="btn">Book Now</a>
+                  <a href="#room-detail-suite" class="btn btn-outline"
+                    >Explore</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card room-card" data-cat="presidential">
+            <div class="card-body">
+              <h3><span class="room-badge badge-presidential">Elite</span> Presidential Suite</h3>
+              <p>
+                The pinnacle of luxury — private terrace, butler service and
+                more.
+              </p>
+              <ul class="room-meta">
+                <li><i class="fa-solid fa-ruler-combined"></i> 140 m²</li>
+                <li><i class="fa-solid fa-user"></i> 6 Guests</li>
+                <li><i class="fa-solid fa-bed"></i> 2 King Beds</li>
+              </ul>
+              <ul class="room-features">
+                <li>
+                  <i class="fa-solid fa-umbrella-beach"></i> Private Terrace
+                </li>
+                <li><i class="fa-solid fa-user-tie"></i> Butler Service</li>
+                <li><i class="fa-solid fa-car"></i> Chauffeur</li>
+              </ul>
+              <div class="room-foot">
+                <div class="price">KES 98,000 <span>/ night</span></div>
+                <div class="room-actions">
+                  <a href="bookings.html" class="btn">Book Now</a>
+                  <a href="#room-detail-presidential" class="btn btn-outline"
+                    >Explore</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AMENITIES STRIP -->
+    <section class="bg-navy">
+      <div class="container">
+        <div class="sec-head">
+          <h2>Room Amenities</h2>
+          <div class="line"></div>
+          <p>Included with every stay, at no extra cost.</p>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <div class="num"><i class="fa-solid fa-wifi"></i></div>
+            <div class="lbl">High-Speed Wi-Fi</div>
+          </div>
+          <div class="stat">
+            <div class="num"><i class="fa-solid fa-bell-concierge"></i></div>
+            <div class="lbl">24/7 Room Service</div>
+          </div>
+          <div class="stat">
+            <div class="num"><i class="fa-solid fa-tv"></i></div>
+            <div class="lbl">Smart TV</div>
+          </div>
+          <div class="stat">
+            <div class="num"><i class="fa-solid fa-snowflake"></i></div>
+            <div class="lbl">Climate Control</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-brand">
+          <img src="img/Logo%20img.jpg" alt="Aurexis logo" class="logo-img" />
+          <div class="brand-name">AUREXIS</div>
+          <p class="tagline">
+            Luxury &nbsp;&#8226;&nbsp; Comfort &nbsp;&#8226;&nbsp; Experience
+          </p>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <ul>
+              <li><a href="support.html">Help &amp; Support</a></li>
+              <li><a href="support.html#terms">Terms &amp; Conditions</a></li>
+              <li><a href="support.html#privacy">Privacy Policy</a></li>
+              <li><a href="support.html#payment-methods">Payment Methods</a></li>
+              <li><a href="support.html#cancellation">Cancellation Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact Us</h4>
+            <ul>
+              <li><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</li>
+              <li><i class="fa-solid fa-phone"></i> +254 700 123 456</li>
+              <li><i class="fa-solid fa-envelope"></i> info@aurexis.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social sm">
+          <a href="#" aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Facebook"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#" aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+        <div class="footer-bottom">
+          © 2026 AUREXIS Hotel. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dining Menu — Aurexis Hotel</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <header>
+      <div class="container nav-wrap">
+        <a href="index.html" class="logo">
+          <img src="img/Logo%20img.jpg" alt="Aurexis logo" class="logo-img" />
+          <h1>AUREXIS</h1>
+        </a><nav id="mainNav">
+          <ul>
+            <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li><li><a href="bookings.html">Bookings</a></li><li><a href="services.html">Services</a></li>
+            <li><a href="menu.html">Menu</a></li><li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <a href="signup.html" class="btn">Sign Up</a><a href="login.html" class="btn btn-outline-light">Login</a>
+        </div>
+      </div>
+    </header>
+    <!-- PAGE BANNER -->
+    <div class="page-banner">
+      <div class="hero-media"></div>
+      <div class="container page-banner-inner">
+        <h2>Dining &amp; Menu</h2><p class="sub">Home &nbsp;/&nbsp; Menu</p>
+      </div>
+    </div>
+
+    <!-- MENU CARDS -->
+    <section>
+      <div class="container">
+        <div class="sec-head">
+          <h2>A Culinary Journey</h2>
+          <div class="line"></div>
+          <p>
+            Chef-crafted dishes made with the finest ingredients, served all day.
+          </p>
+        </div>
+        <!-- Starters -->
+        <h3 class="menu-section-title">Starters</h3>
+        <div class="food-grid menu-panel" id="menu-starters">
+          <div
+            class="food-card"
+            data-item="Truffle Carpaccio"
+            data-price="2400"
+          >
+            <div class="img-ph"></div>
+            <div>
+              <h4>Truffle Carpaccio</h4>
+              <div class="price">KES 2,400</div>
+              <small
+                >Thin-sliced beef, black truffle, capers, aged parmesan</small
+              >
+            </div>
+          </div>
+          <div
+            class="food-card"
+            data-item="Seared Scallops"
+            data-price="2800"
+          >
+            <div class="img-ph"></div>
+            <div>
+              <h4>Seared Scallops</h4>
+              <div class="price">KES 2,800</div>
+              <small>Cauliflower purée, brown butter, citrus pearls</small>
+            </div>
+          </div>
+          <div
+            class="food-card"
+            data-item="Garden Burrata"
+            data-price="1900"
+          >
+            <div class="img-ph"></div>
+            <div>
+              <h4>Garden Burrata</h4>
+              <div class="price">KES 1,900</div>
+              <small>Heirloom tomatoes, basil oil, aged balsamic</small>
+            </div>
+          </div>
+          <div
+            class="food-card"
+            data-item="Lobster Bisque"
+            data-price="2200"
+          >
+            <div class="img-ph"></div>
+            <div>
+              <h4>Lobster Bisque</h4>
+              <div class="price">KES 2,200</div>
+              <small>Cognac cream, chive oil, toasted brioche</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mains -->
+        <h3 class="menu-section-title">Main Course</h3>
+        <div class="food-grid menu-panel" id="menu-mains">
+          <div
+            class="food-card"
+            data-item="Wagyu Ribeye"
+            data-price="8900"
+          >
+            <div class="img-ph"></div>
+            <div>
+              <h4>Wagyu Ribeye</h4>
+              <div class="price">KES 8,900</div>
+              <small>Grade A5 wagyu, roasted bone marrow, red wine jus</small>
+            </div>
+          </div>
+          <div
+            class="food-card"
+            data-item="Herb-Crusted Lamb"
+            data-price="5600"
+          >
+            <div class="img-ph"></div>
+            <div>
+              <h4>Herb-Crusted Lamb</h4>
+              <div class="price">KES 5,600</div>
+              <small>Pistachio crust, confit potato, rosemary jus</small>
+            </div>
+          </div>
+          <div
+            class="food-card"
+            data-item="Butter-Poached Lobster"
+            data-price="6800"
+          >
+            <div class="img-ph"></div>
+            <div>
+              <h4>Butter-Poached Lobster</h4>
+              <div class="price">KES 6,800</div>
+              <small>Saffron risotto, vanilla-lemon emulsion</small>
+            </div>
+          </div>
+          <div
+            class="food-card"
+            data-item="Wild Mushroom Risotto"
+            data-price="3800"
+          >
+            <div class="img-ph"></div>
+            <div>
+              <h4>Wild Mushroom Risotto</h4>
+              <div class="price">KES 3,800</div>
+              <small>Carnaroli rice, porcini, truffle shavings</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <h3 class="menu-section-title">Desserts</h3>
+        <div class="food-grid menu-panel" id="menu-desserts">
+          <div
+            class="food-card"
+            data-item="Chocolate Fondant"
+            data-price="1800"
+          >
+            <div class="img-ph"></div>
+            <div>
+              <h4>Chocolate Fondant</h4>
+              <div class="price">KES 1,800</div>
+              <small>Salted caramel core, vanilla bean ice cream</small>
+            </div>
+          </div>
+          <div
+            class="food-card"
+            data-item="Crème Brûlée"
+            data-price="1400"
+          >
+            <div class="img-ph"></div>
+            <div>
+              <h4>Crème Brûlée</h4>
+              <div class="price">KES 1,400</div>
+              <small>Tahitian vanilla, torched sugar crust</small>
+            </div>
+          </div>
+          <div
+            class="food-card"
+            data-item="Golden Cheesecake"
+            data-price="2000"
+          >
+            <div class="img-ph"></div>
+            <div>
+              <h4>Golden Cheesecake</h4>
+              <div class="price">KES 2,000</div>
+              <small>Gold leaf, berry compote</small>
+            </div>
+          </div>
+          <div
+            class="food-card"
+            data-item="Tropical Sorbet Trio"
+            data-price="1200"
+          >
+            <div class="img-ph"></div>
+            <div>
+              <h4>Tropical Sorbet Trio</h4>
+              <div class="price">KES 1,200</div>
+              <small>Mango, passion fruit and coconut sorbets</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beverages -->
+        <h3 class="menu-section-title">Beverages</h3>
+        <div class="food-grid menu-panel" id="menu-drinks">
+          <div
+            class="food-card"
+            data-item="Vintage Champagne"
+            data-price="2600"
+          >
+            <div class="img-ph"></div>
+            <div>
+              <h4>Vintage Champagne</h4>
+              <div class="price">KES 2,600</div>
+              <small>By the glass · bottle KES 18,000</small>
+            </div>
+          </div>
+          <div
+            class="food-card"
+            data-item="Signature Aurexis Cocktail"
+            data-price="2100"
+          >
+            <div class="img-ph"></div>
+            <div>
+              <h4>Signature Aurexis Cocktail</h4>
+              <div class="price">KES 2,100</div>
+              <small>Aged rum, fig, smoked honey</small>
+            </div>
+          </div>
+          <div
+            class="food-card"
+            data-item="Single Malt Selection"
+            data-price="3200"
+          >
+            <div class="img-ph"></div>
+            <div>
+              <h4>Single Malt Selection</h4>
+              <div class="price">KES 3,200</div>
+              <small>Curated 18-year scotches</small>
+            </div>
+          </div>
+          <div
+            class="food-card"
+            data-item="Artisan Tea &amp; Coffee"
+            data-price="900"
+          >
+            <div class="img-ph"></div>
+            <div>
+              <h4>Artisan Tea &amp; Coffee</h4>
+              <div class="price">KES 900</div>
+              <small>Estate blends, pour-over</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DINING VENUES -->
+    <section class="bg-light">
+      <div class="container">
+        <div class="sec-head"><h2>Dine in Style</h2><div class="line"></div></div>
+        <div class="cards">
+          <div class="card"><div class="img-ph"></div><div class="card-body"><h3>The Grand Hall</h3><p>Fine international dining in an elegant ballroom setting.</p></div></div>
+          <div class="card"><div class="img-ph"></div><div class="card-body"><h3>Skyline Rooftop</h3><p>Cocktails and small plates above the city lights.</p></div></div>
+          <div class="card"><div class="img-ph"></div><div class="card-body"><h3>Garden Terrace</h3><p>Al-fresco breakfast and afternoon tea among the greenery.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-brand">
+          <img src="img/Logo%20img.jpg" alt="Aurexis logo" class="logo-img" />
+          <div class="brand-name">AUREXIS</div>
+          <p class="tagline">Luxury &nbsp;&#8226;&nbsp; Comfort &nbsp;&#8226;&nbsp; Experience</p>
+        </div>
+        <div class="footer-cols">
+          <div><h4>Quick Links</h4><ul>
+            <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li><li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul></div>
+          <div><h4>Support</h4><ul>
+            <li><a href="support.html">Help &amp; Support</a></li><li><a href="support.html#terms">Terms &amp; Conditions</a></li>
+            <li><a href="support.html#privacy">Privacy Policy</a></li><li><a href="support.html#payment-methods">Payment Methods</a></li>
+            <li><a href="support.html#cancellation">Cancellation Policy</a></li>
+          </ul></div>
+          <div><h4>Contact Us</h4><ul>
+            <li><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</li>
+            <li><i class="fa-solid fa-phone"></i> +254 700 123 456</li>
+            <li><i class="fa-solid fa-envelope"></i> info@aurexis.com</li>
+          </ul></div>
+        </div>
+        <div class="footer-social sm">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer-bottom">
+          © 2026 AUREXIS Hotel. All rights reserved.
+        </div>
+      </div>
+    </footer>  </body>
+</html>

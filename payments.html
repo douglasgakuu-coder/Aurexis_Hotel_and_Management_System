@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payments &mdash; Aurexis Hotel</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container nav-wrap">
+        <a href="index.html" class="logo">
+          <img src="img/Logo%20img.jpg" alt="Aurexis logo" class="logo-img" />
+          <h1>AUREXIS</h1>
+        </a>
+        <nav id="mainNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="bookings.html">Bookings</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <a href="signup.html" class="btn">Sign Up</a>
+          <a href="login.html" class="btn btn-outline-light">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- PAGE BANNER -->
+    <div class="page-banner center pay-banner">
+      <div class="hero-media"></div>
+      <div class="container page-banner-inner">
+        <h2>Secure Payment</h2>
+        <p class="sub">Home &nbsp;/&nbsp; Payments</p>
+      </div>
+    </div>
+
+    <!-- STEPS -->
+    <section class="pay-steps-band">
+      <div class="container">
+        <ol class="pay-steps">
+          <li class="done">
+            <span><i class="fa-solid fa-check"></i></span> Check
+          </li>
+          <li class="active"><span>2</span> Update</li>
+          <li><span>3</span> Confirmation</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PAYMENT METHODS GRID -->
+    <section class="pay-section">
+      <div class="container">
+        <div class="sec-head">
+          <h2>Choose a Payment Method</h2>
+          <div class="line"></div>
+          <p>
+            All methods are processed securely. Pick whichever suits you best.
+          </p>
+        </div>
+
+        <div class="pay-grid">
+          <!-- Card -->
+          <div class="pay-card">
+            <div class="pay-card-head">
+              <span class="pay-card-ic"
+                ><i class="fa-regular fa-credit-card"></i
+              ></span>
+              <div>
+                <h4>Card Payment</h4>
+                <small>Visa, Mastercard & Amex</small>
+              </div>
+            </div>
+            <form>
+              <div class="field">
+                <label for="cardName">Name on Card</label>
+                <input
+                  type="text"
+                  id="cardName"
+                  placeholder="JOHN DOE"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="cardNumber">Card Number</label>
+                <input
+                  type="text"
+                  id="cardNumber"
+                  inputmode="numeric"
+                  placeholder="1234 5678 9012 3456"
+                  maxlength="19"
+                  required
+                />
+              </div>
+              <div class="pay-inline">
+                <div class="field">
+                  <label for="cardExpiry">Expiry (MM/YY)</label>
+                  <input
+                    type="text"
+                    id="cardExpiry"
+                    inputmode="numeric"
+                    placeholder="MM/YY"
+                    maxlength="5"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <label for="cardCvc">CVC</label>
+                  <input
+                    type="text"
+                    id="cardCvc"
+                    inputmode="numeric"
+                    placeholder="123"
+                    maxlength="4"
+                    required
+                  />
+                </div>
+              </div>
+              <button type="submit" class="btn btn-full">
+                <i class="fa-solid fa-lock"></i> Pay Securely
+              </button>
+            </form>
+          </div>
+
+          <!-- M-Pesa -->
+          <div class="pay-card">
+            <div class="pay-card-head">
+              <span class="pay-card-ic"
+                ><i class="fa-solid fa-mobile-screen"></i
+              ></span>
+              <div>
+                <h4>M-Pesa</h4>
+                <small>Pay from your Safaricom line</small>
+              </div>
+            </div>
+            <form>
+              <div class="field">
+                <label for="mpesaPhone">M-Pesa Phone Number</label>
+                <input
+                  type="tel"
+                  id="mpesaPhone"
+                  placeholder="+254 7XX XXX XXX"
+                  required
+                />
+              </div>
+              <p class="pay-note">
+                You'll receive an STK push prompt on your phone. Enter your
+                M-Pesa PIN to complete the payment.
+              </p>
+              <button type="submit" class="btn btn-full">
+                <i class="fa-solid fa-lock"></i> Pay Securely
+              </button>
+            </form>
+          </div>
+
+          <!-- Bank transfer -->
+          <div class="pay-card">
+            <div class="pay-card-head">
+              <span class="pay-card-ic"
+                ><i class="fa-solid fa-building-columns"></i
+              ></span>
+              <div>
+                <h4>Bank Transfer</h4>
+                <small>Direct deposit to our account</small>
+              </div>
+            </div>
+            <ul class="bank-details">
+              <li><span>Bank</span> NCBA Bank Kenya</li>
+              <li><span>Account Name</span> AUREXIS Hotel Ltd</li>
+              <li><span>Account Number</span> 1234 5678 90</li>
+              <li><span>SWIFT</span> NBAFKENX</li>
+            </ul>
+            <p class="pay-note">
+              Transfer the exact amount and keep the confirmation slip. Your
+              reservation is held for 48 hours pending clearance.
+            </p>
+          </div>
+
+          <!-- Pay at desk -->
+          <div class="pay-card">
+            <div class="pay-card-head">
+              <span class="pay-card-ic"
+                ><i class="fa-solid fa-money-bill-wave"></i
+              ></span>
+              <div>
+                <h4>Pay at Desk</h4>
+                <small>Settle on arrival</small>
+              </div>
+            </div>
+            <p class="pay-note">
+              Pay at the front desk when you arrive. Unpaid bookings are
+              released after 6:00 PM on the check-in date.
+            </p>
+            <a href="contact.html" class="btn btn-outline"
+              >Contact Front Desk</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="bg-light">
+      <div class="container pay-trust">
+        <div class="pay-trust-item">
+          <i class="fa-solid fa-lock"></i>
+          <h4>SSL Secured</h4>
+          <p>All transactions are encrypted end to end.</p>
+        </div>
+        <div class="pay-trust-item">
+          <i class="fa-solid fa-rotate-left"></i>
+          <h4>Easy Refunds</h4>
+          <p>Free cancellation up to 48 hours before arrival.</p>
+        </div>
+        <div class="pay-trust-item">
+          <i class="fa-regular fa-credit-card"></i>
+          <h4>Flexible Options</h4>
+          <p>Card, M-Pesa, bank transfer or pay at the desk.</p>
+        </div>
+        <div class="pay-trust-item">
+          <i class="fa-solid fa-headset"></i>
+          <h4>24/7 Support</h4>
+          <p>Our concierge is always a call away.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-brand">
+          <img src="img/Logo%20img.jpg" alt="Aurexis logo" class="logo-img" />
+          <div class="brand-name">AUREXIS</div>
+          <p class="tagline">
+            Luxury &nbsp;&#8226;&nbsp; Comfort &nbsp;&#8226;&nbsp; Experience
+          </p>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <ul>
+              <li><a href="support.html">Help &amp; Support</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="support.html#privacy">Privacy Policy</a></li>
+              <li><a href="support.html#payment-methods">Payment Methods</a></li>
+              <li><a href="support.html#cancellation">Cancellation Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact Us</h4>
+            <ul>
+              <li><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</li>
+              <li><i class="fa-solid fa-phone"></i> +254 700 123 456</li>
+              <li><i class="fa-solid fa-envelope"></i> info@aurexis.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social sm">
+          <a href="#" aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Facebook"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#" aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="#" aria-label="TikTok"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+        </div>
+        <p>Designed by Douglas & The Alpha Sindicate.</p>
+        <div class="footer-bottom">
+          &copy; 2026 AUREXIS Hotel. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

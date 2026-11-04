@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookings — Aurexis Hotel</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container nav-wrap">
+        <a href="index.html" class="logo">
+          <img src="img/Logo%20img.jpg" alt="Aurexis logo" class="logo-img">
+          <h1>AUREXIS</h1>
+        </a><nav id="mainNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="bookings.html">Bookings</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <a href="signup.html" class="btn">Sign Up</a>
+          <a href="login.html" class="btn btn-outline-light">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- BOOKING FORM + SUMMARY -->
+    <section>
+      <div class="container booking-layout">
+        <div class="booking-card">
+          <h3>Reservation Details</h3>
+          <form>
+            <div class="form-grid">
+              <div class="field">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="John" required />
+                <p class="error">Please enter your first name.</p>
+              </div>
+              <div class="field">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Doe" required />
+                <p class="error">Please enter your last name.</p>
+              </div>
+              <div class="field">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="john@example.com"
+                  required
+                />
+                <p class="error">Please enter a valid email.</p>
+              </div>
+              <div class="field">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="+254 700 123 456"
+                  required
+                />
+                <p class="error">Please enter your phone number.</p>
+              </div>
+              <div class="field">
+                <label for="checkin">Check-In Date</label>
+                <input type="date" id="checkin" required />
+                <p class="error">Please select a check-in date.</p>
+              </div>
+              <div class="field">
+                <label for="checkout">Check-Out Date</label>
+                <input type="date" id="checkout" required />
+                <p class="error">Please select a check-out date.</p>
+              </div>
+              <div class="field">
+                <label for="roomtype">Room Type</label>
+                <select id="roomtype" required>
+                  <option value="">— Select room —</option>
+                  <option value="Standard Room" data-price="18000">Standard Room — KES 18,000</option>
+                  <option value="Deluxe Room" data-price="25000">Deluxe Room — KES 25,000</option>
+                  <option value="Executive Room" data-price="42000">Executive Room — KES 42,000</option>
+                  <option value="Family Room" data-price="56000">Family Room — KES 56,000</option>
+                  <option value="Royal Suite" data-price="75000">Royal Suite — KES 75,000</option>
+                  <option value="Presidential Suite" data-price="98000">Presidential Suite — KES 98,000</option>
+                </select>
+                <p class="error">Please choose a room type.</p>
+              </div>
+              <div class="field">
+                <label for="guests">Guests</label>
+                <input
+                  type="number"
+                  id="guests"
+                  min="1"
+                  max="8"
+                  value="1"
+                  required
+                />
+                <p class="error">Please enter the number of guests (1—8).</p>
+              </div>
+              <div class="field full addons-field">
+                <label>Room Additions <span class="optional-tag">(optional)</span></label>
+                <div class="addons-grid">
+                  <label class="addon-item">
+                    <input type="checkbox" class="addon" value="airport" data-name="Airport Pickup" data-price="3500" data-mode="once" />
+                    <span class="addon-box"></span>
+                    <span class="addon-info"><strong>Airport Pickup</strong><em>KES 3,500 · one-time</em></span>
+                  </label>
+                  <label class="addon-item">
+                    <input type="checkbox" class="addon" value="late" data-name="Late Check-In" data-price="1500" data-mode="once" />
+                    <span class="addon-box"></span>
+                    <span class="addon-info"><strong>Late Check-In</strong><em>KES 1,500 · one-time</em></span>
+                  </label>
+                  <label class="addon-item">
+                    <input type="checkbox" class="addon" value="breakfast" data-name="Breakfast Buffet" data-price="1200" data-mode="night" />
+                    <span class="addon-box"></span>
+                    <span class="addon-info"><strong>Breakfast Buffet</strong><em>KES 1,200 / night</em></span>
+                  </label>
+                  <label class="addon-item">
+                    <input type="checkbox" class="addon" value="spa" data-name="Spa &amp; Pool Access" data-price="2500" data-mode="night" />
+                    <span class="addon-box"></span>
+                    <span class="addon-info"><strong>Spa &amp; Pool Access</strong><em>KES 2,500 / night</em></span>
+                  </label>
+                  <label class="addon-item">
+                    <input type="checkbox" class="addon" value="extrabed" data-name="Extra Bed" data-price="2000" data-mode="night" />
+                    <span class="addon-box"></span>
+                    <span class="addon-info"><strong>Extra Bed</strong><em>KES 2,000 / night</em></span>
+                  </label>
+                  <label class="addon-item">
+                    <input type="checkbox" class="addon" value="romantic" data-name="Romantic Setup" data-price="3000" data-mode="once" />
+                    <span class="addon-box"></span>
+                    <span class="addon-info"><strong>Romantic Setup</strong><em>KES 3,000 · one-time</em></span>
+                  </label>
+                </div>
+              </div>
+              <div class="field full">
+                <label for="requests">Special Requests</label>
+                <textarea
+                  id="requests"
+                  rows="4"
+                  placeholder="Airport pickup, late check-in, dietary needs..."
+                ></textarea>
+              </div>
+              <div class="full">
+                <button type="submit" class="btn">Confirm Reservation</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <aside class="booking-summary">
+          <h3>Your Stay</h3>
+          <div class="row"><span>Room</span><span>—</span></div>
+          <div class="row">
+            <span>Guests</span><span>1</span>
+          </div>
+          <div class="row"><span>Check-In</span><span>—</span></div>
+          <div class="row">
+            <span>Check-Out</span><span>—</span>
+          </div>
+          <div class="row sub">
+            <span>Room Charge</span><span>KES 0</span>
+          </div>
+          <div class="row sub">
+            <span>Extra-Guest Surcharge</span><span>KES 0</span>
+          </div>
+          <div class="row sub">
+            <span>Room Additions</span><span>KES 0</span>
+          </div>
+          <div class="row total">
+            <span>Est. Total</span><span>KES 0</span>
+          </div>
+          <p class="note">
+            Pay securely online now, or at the front desk. Free cancellation up
+            to 48 hours before arrival.
+          </p>
+          <a href="contact.html" class="btn btn-full text-center"
+            >Contact Reservations <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- WHY BOOK WITH US -->
+    <section class="bg-light">
+      <div class="container">
+        <div class="sec-head">
+          <h2>Why Book With Us</h2>
+          <div class="line"></div>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <div class="num"><i class="fa-solid fa-tag"></i></div>
+            <div class="lbl">Best Rate Guarantee</div>
+          </div>
+          <div class="stat">
+            <div class="num"><i class="fa-solid fa-clock"></i></div>
+            <div class="lbl">Free Cancellation</div>
+          </div>
+          <div class="stat">
+            <div class="num"><i class="fa-solid fa-lock"></i></div>
+            <div class="lbl">Secure Booking</div>
+          </div>
+          <div class="stat">
+            <div class="num"><i class="fa-solid fa-headset"></i></div>
+            <div class="lbl">24/7 Support</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-brand">
+          <img src="img/Logo%20img.jpg" alt="Aurexis logo" class="logo-img">
+          <div class="brand-name">AUREXIS</div>
+          <p class="tagline">
+            Luxury &nbsp;•&nbsp; Comfort &nbsp;•&nbsp; Experience
+          </p>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <ul>
+              <li><a href="support.html">Help &amp; Support</a></li>
+              <li><a href="support.html#terms">Terms &amp; Conditions</a></li>
+              <li><a href="support.html#privacy">Privacy Policy</a></li>
+              <li><a href="support.html#payment-methods">Payment Methods</a></li>
+              <li><a href="support.html#cancellation">Cancellation Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact Us</h4>
+            <ul>
+              <li><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</li>
+              <li><i class="fa-solid fa-phone"></i> +254 700 123 456</li>
+              <li><i class="fa-solid fa-envelope"></i> info@aurexis.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social sm">
+          <a href="#" aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Facebook"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#" aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+        <div class="footer-bottom">
+          © 2026 AUREXIS Hotel. All rights reserved.
+        </div>
+      </div>
+    </footer>  </body>
+</html>
+
+

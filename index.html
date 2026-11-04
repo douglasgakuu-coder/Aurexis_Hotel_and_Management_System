@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurexis Hotel — Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container nav-wrap">
+        <a href="index.html" class="logo">
+          <img src="img/Logo%20img.jpg" alt="Aurexis logo" />
+          <h1>AUREXIS</h1>
+        </a><nav id="mainNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="bookings.html">Bookings</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <a href="signup.html" class="btn">Sign Up</a>
+          <a href="login.html" class="btn btn-outline-light">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO + QUICK BOOKING CARD -->
+    <section class="hero">
+      <div class="hero-media">
+        <img src="img/hero image.jpg" alt="Aurexis hotel image" />
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="hero-tag">Luxury Redefined</p>
+          <h2>Experience Unmatched Comfort &amp; Elegance</h2>
+          <p>
+            AUREXIS Hotel offers a perfect blend of modern luxury, comfort, and
+            world-class hospitality. Your stay, our priority.
+          </p>
+          <div class="hero-btns">
+            <a href="bookings.html" class="btn">Book Now</a>
+            <a href="rooms.html" class="btn btn-outline-light">Explore Rooms</a>
+          </div>
+        </div>
+        <aside class="quick-book">
+          <h3>Check-In &amp; Check-Out</h3>
+          <form>
+            <div class="qb-row">
+              <div class="qb-field">
+                <label for="qbIn">Check-In</label>
+                <input type="date" id="qbIn" value="2026-11-01" />
+              </div>
+              <div class="qb-field">
+                <label for="qbOut">Check-Out</label>
+                <input type="date" id="qbOut" value="2026-11-03" />
+              </div>
+            </div>
+            <div class="qb-row">
+              <div class="qb-field">
+                <label for="qbGuests">Guests</label>
+                <select id="qbGuests">
+                  <option>2 Adults, 0 Children</option>
+                  <option>1 Adult, 0 Children</option>
+                  <option>2 Adults, 2 Children</option>
+                  <option>4 Adults, 0 Children</option>
+                </select>
+              </div>
+            </div>
+            <a href="bookings.html" class="btn btn-full text-center"
+              >Book &amp; Enquiry</a
+            >
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FEATURES STRIP -->
+    <section>
+      <div class="container feature-strip">
+        <div class="f">
+          <div class="f-ic"><i class="fa-solid fa-bed"></i></div>
+          <h4>Luxury Rooms</h4>
+        </div>
+        <div class="f">
+          <div class="f-ic"><i class="fa-solid fa-utensils"></i></div>
+          <h4>Fine Dining</h4>
+        </div>
+        <div class="f">
+          <div class="f-ic"><i class="fa-solid fa-spa"></i></div>
+          <h4>Wellness &amp; Spa</h4>
+        </div>
+        <div class="f">
+          <div class="f-ic"><i class="fa-solid fa-location-dot"></i></div>
+          <h4>Prime Location</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED ROOMS -->
+    <section>
+      <div class="container">
+        <p class="hero-tag text-center">Our Accommodation</p>
+        <h2 class="feature-title text-center">Featured Rooms</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="img-ph">Deluxe Room</div>
+            <div class="card-body">
+              <h3><span class="room-badge">Elite</span> Deluxe Room</h3>
+              <p>
+                A spacious, elegantly appointed room with a king-size bed and
+                garden views — perfect for couples or business travelers.
+              </p>
+              <p class="room-price">KES 25,000 <span>/ night</span></p>
+              <a href="rooms.html" class="btn">View Details</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-ph">Executive Room</div>
+            <div class="card-body">
+              <h3><span class="room-badge">Elite</span> Executive Room</h3>
+              <p>
+                A refined room with a private lounge, work desk, and panoramic
+                city views for a truly premium stay.
+              </p>
+              <p class="room-price">KES 42,000 <span>/ night</span></p>
+              <a href="rooms.html" class="btn">View Details</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-ph">Family Room</div>
+            <div class="card-body">
+              <h3><span class="room-badge">Elite</span> Family Room</h3>
+              <p>
+                Two interconnected bedrooms with a lounge and kitchenette,
+                designed for comfort and space for the whole family.
+              </p>
+              <p class="room-price">KES 56,000 <span>/ night</span></p>
+              <a href="rooms.html" class="btn">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WELCOME -->
+    <section class="bg-light">
+      <div class="container feature">
+        <div class="img-ph">
+          <img src="img/image 5.jpg" alt="Aurexis hotel image" />
+        </div>
+        <div>
+          <p class="hero-tag">Welcome to AUREXIS</p>
+          <h2 class="feature-title">More Than Just a Stay</h2>
+          <p>
+            At AUREXIS, we create unforgettable experiences with elegant rooms,
+            exceptional service, and premium amenities. Whether you're here for
+            business or leisure, your comfort is our mission.
+          </p>
+          <a href="about.html" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERFECT STAY BAND -->
+    <section class="bg-dark band-center">
+      <div class="container band-inner">
+        <h2 class="band-title">A Perfect Stay</h2>
+        <p class="band-links">
+          Luxury Rooms &nbsp;|&nbsp; Fine Dining &nbsp;|&nbsp; Relaxation
+          &nbsp;|&nbsp; Unforgettable Moments
+        </p>
+        <div class="img-ph band-img">
+          <img src="img/image 5.jpg" alt="Aurexis hotel image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-brand">
+          <img src="img/Logo%20img.jpg" alt="Aurexis logo" class="logo-img" />
+          <div class="brand-name">AUREXIS</div>
+          <p class="tagline">
+            Luxury &nbsp;&#8226;&nbsp; Comfort &nbsp;&#8226;&nbsp; Experience
+          </p>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <ul>
+              <li><a href="support.html">Help &amp; Support</a></li>
+              <li><a href="support.html#terms">Terms &amp; Conditions</a></li>
+              <li><a href="support.html#privacy">Privacy Policy</a></li>
+              <li><a href="support.html#payment-methods">Payment Methods</a></li>
+              <li><a href="support.html#cancellation">Cancellation Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact Us</h4>
+            <ul>
+              <li><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</li>
+              <li><i class="fa-solid fa-phone"></i> +254 700 123 456</li>
+              <li><i class="fa-solid fa-envelope"></i> info@aurexis.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social sm">
+          <a href="#" aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Facebook"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#" aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="#" aria-label="TikTok"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+        </div>
+        <p>Designed by Douglas &amp; The Alpha Sindicate.</p>
+        <div class="footer-bottom">
+          © 2026 AUREXIS Hotel. All rights reserved.
+        </div>
+      </div>
+    </footer>  </body>
+</html>
+
