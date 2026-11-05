@@ -74,8 +74,8 @@
           <div class="pay-card">
             <div class="pay-card-head">
               <span class="pay-card-ic"
-                ><i class="fa-regular fa-credit-card"></i
-              ></span>
+                ><img src="img/Card%20logo.jpg" alt="Card payment"
+              /></span>
               <div>
                 <h4>Card Payment</h4>
                 <small>Visa, Mastercard & Amex</small>
@@ -136,8 +136,8 @@
           <div class="pay-card">
             <div class="pay-card-head">
               <span class="pay-card-ic"
-                ><i class="fa-solid fa-mobile-screen"></i
-              ></span>
+                ><img src="img/Mpesa%20Logo.jpg" alt="M-Pesa"
+              /></span>
               <div>
                 <h4>M-Pesa</h4>
                 <small>Pay from your Safaricom line</small>
@@ -163,12 +163,43 @@
             </form>
           </div>
 
+          <!-- PayPal -->
+          <div class="pay-card">
+            <div class="pay-card-head">
+              <span class="pay-card-ic"
+                ><img src="img/Paypal%20logo.jpg" alt="PayPal"
+              /></span>
+              <div>
+                <h4>PayPal</h4>
+                <small>Pay with your PayPal account</small>
+              </div>
+            </div>
+            <form>
+              <div class="field">
+                <label for="paypalEmail">PayPal Email Address</label>
+                <input
+                  type="email"
+                  id="paypalEmail"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <p class="pay-note">
+                You'll be redirected to PayPal to log in and confirm the payment
+                securely. No card details are shared with us.
+              </p>
+              <button type="submit" class="btn btn-full">
+                <i class="fa-solid fa-lock"></i> Pay with PayPal
+              </button>
+            </form>
+          </div>
+
           <!-- Bank transfer -->
           <div class="pay-card">
             <div class="pay-card-head">
               <span class="pay-card-ic"
-                ><i class="fa-solid fa-building-columns"></i
-              ></span>
+                ><img src="img/bank%20logo.jpg" alt="Bank transfer"
+              /></span>
               <div>
                 <h4>Bank Transfer</h4>
                 <small>Direct deposit to our account</small>
@@ -190,8 +221,8 @@
           <div class="pay-card">
             <div class="pay-card-head">
               <span class="pay-card-ic"
-                ><i class="fa-solid fa-money-bill-wave"></i
-              ></span>
+                ><img src="img/pay at desk logo.jpg" alt="Pay at desk"
+              /></span>
               <div>
                 <h4>Pay at Desk</h4>
                 <small>Settle on arrival</small>
@@ -225,7 +256,7 @@
         <div class="pay-trust-item">
           <i class="fa-regular fa-credit-card"></i>
           <h4>Flexible Options</h4>
-          <p>Card, M-Pesa, bank transfer or pay at the desk.</p>
+          <p>Card, PayPal, M-Pesa, bank transfer or pay at the desk.</p>
         </div>
         <div class="pay-trust-item">
           <i class="fa-solid fa-headset"></i>
@@ -262,8 +293,12 @@
               <li><a href="support.html">Help &amp; Support</a></li>
               <li><a href="#">Terms & Conditions</a></li>
               <li><a href="support.html#privacy">Privacy Policy</a></li>
-              <li><a href="support.html#payment-methods">Payment Methods</a></li>
-              <li><a href="support.html#cancellation">Cancellation Policy</a></li>
+              <li>
+                <a href="support.html#payment-methods">Payment Methods</a>
+              </li>
+              <li>
+                <a href="support.html#cancellation">Cancellation Policy</a>
+              </li>
             </ul>
           </div>
           <div>

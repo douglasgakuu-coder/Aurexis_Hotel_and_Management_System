@@ -893,6 +893,143 @@ section {
   margin-bottom: 12px;
 }
 
+/* ---------- Room details page ---------- */
+.room-detail {
+  padding: 64px 0;
+  scroll-margin-top: 90px;
+}
+.room-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 40px;
+}
+.room-detail-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+.room-info h3 {
+  margin: 0 0 12px;
+}
+.room-info p {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+.room-amenities {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 24px;
+}
+.room-amenities li i {
+  color: var(--secondary);
+  width: 22px;
+}
+.room-details-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.room-details-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+.room-details-list li span {
+  font-weight: 600;
+}
+.room-aside {
+  position: sticky;
+  top: 100px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.room-aside .price {
+  font-size: 1.4rem;
+}
+@media (max-width: 900px) {
+  .room-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .room-detail-body {
+    grid-template-columns: 1fr;
+  }
+  .room-aside {
+    position: static;
+  }
+}
+
+/* ---------- Add to cart (menu) ---------- */
+.add-to-cart-btn {
+  margin-top: auto;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.cart-icon-img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: inline-block;
+}
+.cart-icon-img.lg {
+  width: 32px;
+  height: 32px;
+}
+
+.cart-summary {
+  margin-top: 48px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+.cart-summary-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.cart-summary-head h3 {
+  margin: 0;
+}
+.cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+}
+.cart-items .cart-empty-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.cart-total .price {
+  font-size: 1.1rem;
+}
+
 /* ---------- Contact ---------- */
 .contact-layout {
   display: grid;
@@ -1675,6 +1812,13 @@ footer {
   display: grid;
   place-items: center;
   font-size: 1.05rem;
+  overflow: hidden;
+}
+.pay-card-ic img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
 }
 .pay-card .field {
   margin-bottom: 13px;
